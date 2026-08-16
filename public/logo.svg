@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="t d">
+<title id="t">نشان رایان بارای</title><desc id="d">نشان هندسی الهام‌گرفته از فناوری و ترازوی عدالت</desc>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#18b8ae"/><stop offset="1" stop-color="#0b3656"/></linearGradient></defs>
+<rect width="128" height="128" rx="31" fill="url(#g)"/>
+<path d="M64 24v62M39 43h50M42 44l-14 23h28L42 44Zm44 0L72 67h28L86 44Z" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M45 91h38M52 103h24" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+<circle cx="64" cy="33" r="6" fill="#e1ad4f"/>
+</svg>

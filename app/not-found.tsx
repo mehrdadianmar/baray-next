@@ -1,0 +1,1 @@
+import Link from "next/link";export default function NotFound(){return <section className="pageHero"><div className="wrap"><span className="kicker"><i/> خطای ۴۰۴</span><h1>این صفحه<br/><em>پیدا نشد.</em></h1><p>ممکن است نشانی تغییر کرده باشد.</p><Link className="button" href="/">بازگشت به خانه ←</Link></div></section>}
