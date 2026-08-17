@@ -1,5 +1,6 @@
 # Rayan Baray
-رایان بارای ارائه‌دهنده راهکارهای مدیریت امور حقوقی، دعاوی، اجرای احکام و کمیسیون‌های سازمانی است.
+رایان بارای ارائه‌دهنده رای‌بات و راهکارهای هوشمند مدیریت امور حقوقی، قراردادها، ریسک، جست‌وجوی قوانین، OCR فارسی، دعاوی، اجرای احکام و کمیسیون‌های سازمانی است.
 Canonical website: https://www.baray.ir/
 Primary language: Persian (fa-IR)
-Key sections: products, solutions, legal-technology knowledge, news, demo request.
+Primary AI product: RayBot, an on-premise intelligent legal assistant for Iranian organizations.
+Key sections: RayBot, smart contracts, legal search, risk prediction, Persian OCR, products, customers, news, demo request.
