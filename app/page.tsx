@@ -57,13 +57,7 @@ export default function Home(){
           <div className="actions"><Link className="button" href="#raybot">آشنایی با رای‌بات <b>←</b></Link><Link className="button ghost" href="#demo">درخواست دموی تخصصی</Link></div>
           <div className="proof"><span>✓ استقرار درون‌سازمانی</span><span>✓ منطبق با حقوق قضایی ایران</span><span>✓ داده‌محور و قابل ردیابی</span></div>
         </div>
-        <div className="command heroCommand" aria-label="نمای گرافیکی مرکز فرماندهی امور حقوقی">
-          <div className="commandTop"><span>مرکز فرماندهی حقوقی</span><div><i/><i/><i/></div></div>
-          <div className="commandStats"><div><small>پرونده‌های فعال</small><b>۲۸۴</b><em>+۱۲ این ماه</em></div><div><small>موعدهای نزدیک</small><b>۳۶</b><em className="warn">نیازمند اقدام</em></div><div><small>اقدام در موعد</small><b>۷۸٪</b><em>روند رو به رشد</em></div></div>
-          <div className="chartTitle"><b>روند پرونده‌ها</b><span>۶ ماه اخیر</span></div><div className="bars">{[42,60,48,75,67,88,72,94].map((height,index)=><i key={index} style={{height:`${height}%`}}/>)}</div>
-          <div className="event"><span>●</span><div><b>ابلاغیه جدید ثبت شد</b><small>پرونده ۱۴۰۵/۱۲۸ — واحد قراردادها</small></div><time>۰۹:۴۲</time></div>
-          <div className="commandAi"><i/> تحلیل هوشمند رای‌بات فعال است</div>
-        </div>
+        <div className="heroProductVisual"><span className="heroVisualGlow"/><img src={assetUrl("/visuals/legal-command-center.png")} width="484" height="462" fetchPriority="high" alt="داشبورد مرکز فرماندهی حقوقی با هشدار هوشمند موعدها و گزارش‌های مدیریتی"/></div>
       </div>
     </section>
 
