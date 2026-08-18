@@ -3,4 +3,4 @@
 Canonical website: https://www.baray.ir/
 Primary language: Persian (fa-IR)
 Primary AI product: RayBot, an on-premise intelligent legal assistant for Iranian organizations.
-Key sections: RayBot, smart contracts, legal search, risk prediction, Persian OCR, products, customers, news, demo request.
+Key sections: RayBot, comprehensive legal affairs management, enforcement, commissions 38 and 77, quasi-judicial proceedings, meetings and resolutions, contracts and real estate, business intelligence, smart contracts, legal search, risk prediction, Persian OCR, ERP products, customers, news and demo request.

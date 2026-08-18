@@ -32,4 +32,4 @@ git push origin main
 
 ## بازگشت به دامنه اصلی
 
-برای انتشار روی `baray.ir` از بسته `baray-next-wordpress-final-v7.zip` استفاده کنید، نه این بسته GitHub. نسخه اصلی فاقد `/baray-next` و دارای تنظیمات قابل ایندکس است.
+همین کد با تنظیمات محیطی روی `baray.ir` نیز قابل ساخت است. برای دامنه اصلی باید `NEXT_PUBLIC_BASE_PATH` خالی و `NEXT_PUBLIC_NOINDEX=false` باشد؛ Workflow آزمایشی GitHub این دو مقدار را عمداً متفاوت تنظیم می‌کند.
