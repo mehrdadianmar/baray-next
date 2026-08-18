@@ -30,7 +30,8 @@ jobs:
       - name: Test WordPress integration
         run: npm run test:wordpress
       - name: Sync published WordPress posts
-        run: npm run content:sync:strict
+        # در قطعی موقت وردپرس، Snapshot تاییدشده قبلی حفظ می‌شود تا سایت آزمایشی از دسترس خارج نشود.
+        run: npm run content:sync
         env:
           WORDPRESS_API_URL: https://www.baray.ir/wp-json/wp/v2
           WORDPRESS_POST_LIMIT: 100

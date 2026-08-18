@@ -27,6 +27,20 @@ const industries=[
   {icon:"ب",title:"بانک‌ها",text:"عملیات حقوقی چندلایه"},
   {icon:"ا",title:"اپراتورها",text:"حجم بالای داده و پرونده"}
 ];
+const deploymentStats=[
+  {value:"۶۰",label:"مشتری سازمانی",icon:"س"},
+  {value:"۴۰",label:"زیرسیستم",icon:"ز"},
+  {value:"۱۲",label:"پروژه استانی",icon:"ا"},
+  {value:"۳",label:"پروژه ملی",icon:"م"}
+];
+const raybotLegalCapabilities=[
+  "قابلیت خواندن و درک خودکار نامه‌ها، ایمیل‌ها و مستندات حقوقی",
+  "تحلیل محتوای مکاتبات و شناسایی موضوعات حقوقی مهم",
+  "تهیه پیش‌نویس پاسخ‌ها براساس قوانین و مقررات جاری",
+  "اولویت‌بندی پرونده‌ها براساس فوریت و اهمیت",
+  "کاهش حجم کار کارشناسان حقوقی و تسریع فرآیند پاسخ‌دهی"
+];
+const smartSolutionLinks:Record<string,string>={"۰۱":"/products/contracts-contractors","۰۳":"/products/legal-risk-prediction","۰۴":"/products/persian-ocr","۰۵":"/products/legal-management","۰۶":"/products/commission-38"};
 
 export default function Home(){
   const schema={"@context":"https://schema.org","@graph":[
@@ -38,8 +52,8 @@ export default function Home(){
       <div className="wrap heroGrid aiHeroGrid">
         <div className="heroCopy">
           <span className="kicker"><i/> هوش مصنوعی حقوقی در بستر امن سازمان</span>
-          <h1 className="manifesto"><span>هوش در قانون</span><span>نظم در داده</span><span>هر پرونده</span><span className="accent">یک تصمیم هوشمند</span></h1>
-          <p className="heroPromise">کاهش هزینه‌های پنهان در بررسی‌های حقوقی با هوش مصنوعی</p>
+          <h1 className="manifesto"><span className="lawLine">هوش در قانون</span><span className="dataLine">نظم در داده</span><span className="caseLine">هر پرونده</span><span className="accent decisionLine">یک تصمیم هوشمند</span></h1>
+          <p className="heroPromise"><i/>کاهش هزینه‌های پنهان در بررسی‌های حقوقی با هوش مصنوعی</p>
           <div className="actions"><Link className="button" href="#raybot">آشنایی با رای‌بات <b>←</b></Link><Link className="button ghost" href="#demo">درخواست دموی تخصصی</Link></div>
           <div className="proof"><span>✓ استقرار درون‌سازمانی</span><span>✓ منطبق با حقوق قضایی ایران</span><span>✓ داده‌محور و قابل ردیابی</span></div>
         </div>
@@ -59,6 +73,7 @@ export default function Home(){
       <header className="sectionHead raybotHead"><div><span className="eyebrow">محصول محوری هوش مصنوعی بارای</span><h2>رای‌بات؛ دستیار هوشمند حقوقی<br/>سازمان‌ها و ارگان‌ها</h2></div><p>رای‌بات یک هویت هوشمند مبتنی بر داده‌های سازمان شما می‌سازد؛ بدون آن‌که اطلاعات محرمانه برای استفاده از هوش مصنوعی از سازمان خارج شوند.</p></header>
       <div className="raybotIntro"><p>ما در <strong>رای‌بات</strong> به دنبال ایجاد یک هویت هوشمند مبتنی بر داده‌های سازمان یا ارگان شما هستیم. دستیار هوشمند بارای پلاس به مدیران و کارشناسان سازمان‌ها کمک می‌کند تا بدون نیاز به انتقال داده‌ها و اطلاعات سازمان خود به بیرون از سازمان، از دستیار هوشمند حقوقی مبتنی بر حقوق قضایی ایران به‌صورت پویا بهره‌برداری کنند.</p><div className="raybotPillars"><span><b>۰۱</b>فهم داده سازمانی</span><span><b>۰۲</b>تحلیل حقوقی پویا</span><span><b>۰۳</b>پاسخ با زبان انسانی</span></div></div>
       <div className="raybotStories"><article className="rayStory legalVoice"><span className="storyLabel">رای‌بات حقوقی</span><h3>صدای هوش در دنیای قانون</h3><strong>از پرسش تا پاسخ، از داده تا تصمیم؛ همه در یک گفت‌وگوی هوشمند.</strong><p>قانون در عصر جدید فقط ماده و تبصره نیست؛ جریانی از داده‌ها، استدلال‌ها و تصمیم‌هاست. رای‌بات حقوقی ذهنی هوشمند است که می‌فهمد، می‌آموزد و پاسخ می‌دهد؛ پلی میان انسان و قانون، میان پرسش و راه‌حل، میان ضابطه و معنا.</p></article><article className="rayStory cityVoice"><span className="storyLabel">رای‌بات شهری</span><h3>صدای شهر در دنیای داده‌ها</h3><strong>ذهنی که می‌فهمد، می‌آموزد و پاسخ می‌دهد؛ پلی میان انسان و شهر.</strong><p>شهر در عصر جدید شبکه‌ای از داده‌ها، تصمیم‌ها، احساسات و حرکت‌هاست. رای‌بات پلی است میان انسان و شهر، میان پرسش و تصمیم و میان ضابطه و معنا؛ عقل شهر، با زبانی انسانی.</p></article></div>
+      <div className="raybotCapabilityPanel"><div className="raybotCapabilityIntro"><span className="eyebrow light">رای‌بات حقوقی در جریان مکاتبات</span><h3>از خواندن نامه تا پیشنهاد پاسخ؛ یک جریان هوشمند و قابل کنترل</h3><p>رای‌بات محتوای حقوقی را می‌خواند و اولویت‌بندی می‌کند، اما تصمیم و تأیید نهایی همچنان در اختیار کارشناس سازمان باقی می‌ماند.</p></div><div className="raybotCapabilityList">{raybotLegalCapabilities.map((feature,index)=><div key={feature}><b>{String(index+1).padStart(2,"0")}</b><span>{feature}</span><i>✓</i></div>)}</div></div>
     </div></section>
 
     <section id="legal-suite" className="section legalSuite"><div className="wrap">
@@ -70,7 +85,7 @@ export default function Home(){
 
     <section id="solutions" className="section soft"><div className="wrap">
       <header className="sectionHead"><div><span className="eyebrow">سبد راهکارهای هوشمند</span><h2>هوش مصنوعی، در نقطه واقعی کار حقوقی</h2></div><p>هر قابلیت برای حل یک مسئله مشخص طراحی شده است؛ از فهم سند و قانون تا کنترل قرارداد و پیش‌بینی ریسک.</p></header>
-      <div className="smartGrid">{smartSolutions.map(item=><article className="smartCard" key={item.number}><div><span>{item.number}</span><small>{item.tag}</small></div><h3>{item.title}</h3><p>{item.description}</p>{item.number==="۰۱"?<a href="#contracts">جزئیات سامانه قراردادها ←</a>:item.number==="۰۵"?<Link href="/products/legal-management">مشاهده سامانه ←</Link>:null}</article>)}</div>
+      <div className="smartGrid">{smartSolutions.map(item=><article className="smartCard" key={item.number}><div><span>{item.number}</span><small>{item.tag}</small></div><h3>{item.title}</h3><p>{item.description}</p>{smartSolutionLinks[item.number]?<Link href={smartSolutionLinks[item.number]}>مشاهده صفحه راهکار ←</Link>:null}</article>)}</div>
     </div></section>
 
     <section id="contracts" className="section contractSection"><div className="wrap contractGrid"><div><span className="eyebrow light">سامانه هوشمند مدیریت قراردادها</span><h2>از ثبت قرارداد تا هشدار پیش از ریسک</h2><p>سیستمی تخصصی برای ثبت، بررسی، پایش و یادآوری موعدهای مهم قرارداد. هوش مصنوعی بندهای حساس را شناسایی می‌کند و برای جلوگیری از اختلافات هشدار می‌دهد.</p><Link className="button mint" href="/products/contracts-contractors">مشاهده سامانه</Link></div><div className="contractPanel">{contractFeatures.map((item,index)=><div key={item}><b>{String(index+1).padStart(2,"0")}</b><span>{item}</span><i>✓</i></div>)}</div></div></section>
@@ -79,9 +94,11 @@ export default function Home(){
 
     <section className="capabilityBand"><div className="wrap"><article><b>۳۶۰°</b><span>دید کامل پرونده</span></article><article><b>BI</b><span>گزارش مدیریتی</span></article><article><b>OCR</b><span>خوانش هوشمند سند</span></article><article><b>AI</b><span>تحلیل و پیش‌بینی ریسک</span></article></div></section>
 
-    <section className="section ocrSection"><div className="wrap ocrGrid"><div className="ocrVisual" aria-label="نمای تبدیل سند اسکن‌شده به داده قابل جست‌وجو"><div className="paperScan"><span>سند حقوقی اسکن‌شده</span><i/><i/><i/><i/><b>OCR</b></div><div className="dataExtract"><span>متن قابل جست‌وجو</span><b>تعهدات</b><b>تاریخ‌ها</b><b>اشخاص</b><b>مبالغ</b></div></div><div><span className="eyebrow">نویسه‌خوان فارسی OCR</span><h2>هر سند، به داده‌ای قابل جست‌وجو و تحلیل تبدیل می‌شود</h2><p>نویسه‌خوان فارسی OCR اسناد حقوقی چاپی یا اسکن‌شده را به متن دیجیتال تبدیل می‌کند تا اطلاعات آن‌ها سریع جست‌وجو، دسته‌بندی و تحلیل شود. این قابلیت زمان بررسی پرونده‌ها و قراردادها را کاهش می‌دهد و خطای انسانی را محدود می‌کند.</p></div></div></section>
+    <section className="section ocrSection"><div className="wrap ocrGrid"><div className="ocrVisual" aria-label="نمای تبدیل سند اسکن‌شده به داده قابل جست‌وجو"><div className="paperScan"><span>سند حقوقی اسکن‌شده</span><i/><i/><i/><i/><b>OCR</b></div><div className="dataExtract"><span>متن قابل جست‌وجو</span><b>تعهدات</b><b>تاریخ‌ها</b><b>اشخاص</b><b>مبالغ</b></div></div><div><span className="eyebrow">نویسه‌خوان فارسی OCR</span><h2>هر سند، به داده‌ای قابل جست‌وجو و تحلیل تبدیل می‌شود</h2><p>نویسه‌خوان فارسی OCR در سامانه‌های حقوقی نقش مهمی در تسهیل و خودکارسازی فرآیندهای پردازش اسناد دارد. با استفاده از این فناوری، اسناد حقوقی چاپی یا اسکن‌شده به متن دیجیتال تبدیل می‌شوند تا اطلاعات موجود در آن‌ها به‌سرعت جست‌وجو، دسته‌بندی و تحلیل شود. این قابلیت به وکلا، کارشناسان حقوقی و سازمان‌ها کمک می‌کند اسناد حجیم را آسان‌تر مدیریت کنند و زمان مورد نیاز برای بررسی پرونده‌ها و قراردادها را به‌طور چشمگیری کاهش دهند. همچنین، دقت بالای OCR فارسی در تشخیص متون حقوقی به بهبود روند تصمیم‌گیری و کاهش خطاهای انسانی کمک می‌کند.</p><Link className="button ocrButton" href="/products/persian-ocr">مشاهده راهکار OCR فارسی ←</Link></div></div></section>
 
-    <section className="section lifecycleSection"><div className="wrap"><header className="sectionHead lifecycleHead"><div><span className="eyebrow">چرخه پرونده</span><h2>از تشکیل پرونده تا اجرای حکم</h2></div><p>یک مسیر قابل ردیابی برای تمام رویدادهای مهم، بدون وابستگی به فایل‌های پراکنده و پیگیری‌های شخصی.</p></header><div className="caseLifecycle">{caseSteps.map((step,index)=><article key={step.title}><b>{index+1}</b><h3>{step.title}</h3><p>{step.text}</p></article>)}</div></div></section>
+    <section className="deploymentProof"><div className="wrap"><header><span className="eyebrow light">پشتوانه اجرایی</span><h2>فناوری تخصصی، همراه با تجربه استقرار سازمانی</h2><p>اعداد زیر براساس اطلاعات منتشرشده در وب‌سایت فعلی بارای درج شده‌اند و پیش از انتقال به دامنه اصلی باید به‌صورت رسمی تأیید شوند.</p></header><div className="deploymentStats">{deploymentStats.map(stat=><article key={stat.label}><i>{stat.icon}</i><b>{stat.value}<span>+</span></b><small>{stat.label}</small></article>)}</div></div></section>
+
+    <section className="section lifecycleSection"><div className="wrap"><header className="lifecycleHead"><span className="eyebrow">چرخه پرونده</span><h2>از تشکیل پرونده تا اجرای حکم</h2><p>یک مسیر قابل ردیابی برای تمام رویدادهای مهم، بدون وابستگی به فایل‌های پراکنده و پیگیری‌های شخصی.</p></header><div className="caseLifecycle">{caseSteps.map((step,index)=><article key={step.title}><b>{index+1}</b><h3>{step.title}</h3><p>{step.text}</p></article>)}</div></div></section>
 
     <section id="about" className="section aboutSection"><div className="wrap aboutGrid"><div><span className="eyebrow light">درباره ما</span><h2>تجربه ERP، در خدمت مدیریت حقوقی هوشمند</h2><Link className="button mint" href="/about">داستان رایان بارای ←</Link></div><p>گروه فناوری اطلاعات و ارتباطات رایان بارای با اتکا بر دانش و تجربه چندین‌ساله پرسنلی کارآزموده و مجرب، با هدف مشاوره، طراحی، تولید، آموزش، راه‌اندازی و پشتیبانی نرم‌افزارهای برنامه‌ریزی منابع سازمانی (ERP) پایه‌ریزی و تأسیس شد. چشم‌انداز این گروه، کمک به افزایش بهره‌وری سازمان از طریق به‌کارگیری فناوری اطلاعات و سیستم‌های یکپارچه اطلاعاتی است.</p></div></section>
 
